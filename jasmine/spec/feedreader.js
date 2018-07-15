@@ -31,8 +31,8 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('URL defined',function(){
-           urlCheck=allFeeds.forEach(function(feed){
+        it('URLs are defined',function(){
+           allFeeds.forEach(function(feed){
              var bool=Boolean(feed.url)
              expect(bool).toBe(true);
            })
@@ -44,6 +44,14 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+
+         it('Names are defined',function(){
+            allFeeds.forEach(function(feed){
+              var bool=Boolean(feed.name)
+              expect(bool).toBe(true);
+            })
+
+         });
     });
 
 

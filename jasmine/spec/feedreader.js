@@ -67,9 +67,7 @@ $(function() {
        it('Menu is hidden by default',function(){
          var check = $('body').hasClass("menu-hidden")
          expect(check).toBe(true);
-
-
-       })
+       });
 
        /* TODO: Write a test that ensures the menu changes
         * visibility when the menu icon is clicked. This test
@@ -77,18 +75,35 @@ $(function() {
         * clicked and does it hide when clicked again.
         */
 
-    });
+         it('Menu toggles on click',function(){
+
+           $('.menu-icon-link').click();
+           expect($('body').hasClass('menu-hidden')).toBe(false);
+
+           $('.menu-icon-link').click();
+           expect($('body').hasClass('menu-hidden')).toBe(true);
 
 
 
-    /* TODO: Write a new test suite named "Initial Entries" */
+         });
+      });
 
-        /* TODO: Write a test that ensures when the loadFeed
-         * function is called and completes its work, there is at least
-         * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test will require
-         * the use of Jasmine's beforeEach and asynchronous done() function.
-         */
+
+
+  /*  /* TODO: Write a new test suite named "Initial Entries" */
+  //  describe('Initial Entries',function(){
+
+      /* TODO: Write a test that ensures when the loadFeed
+       * function is called and completes its work, there is at least
+       * a single .entry element within the .feed container.
+       * Remember, loadFeed() is asynchronous so this test will require
+       * the use of Jasmine's beforeEach and asynchronous done() function.
+       */
+
+
+  //  });
+
+
 
     /* TODO: Write a new test suite named "New Feed Selection" */
 
@@ -96,4 +111,5 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
 }());

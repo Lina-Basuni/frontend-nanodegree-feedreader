@@ -102,8 +102,8 @@ $(function() {
          expect($(".feed > a").length).not.toBe(0)
          done()
 
-       });//end describe
-
+       });//end it
+     });//end describe
 
     /*this is new test suite named "New Feed Selection" */
 

@@ -102,10 +102,24 @@ $(function() {
          expect($(".feed > a").length).not.toBe(0)
          done()
 
+<<<<<<< HEAD
        });//end it
      });//end describe
+||||||| merged common ancestors
+       });
+=======
+       });//end describe
+>>>>>>> 3af23379c4ed00a9fb960c3d3be2e51d00e810e5
+
+<<<<<<< HEAD
+    /*this is new test suite named "New Feed Selection" */
+||||||| merged common ancestors
+
+    });
+=======
 
     /*this is new test suite named "New Feed Selection" */
+>>>>>>> 3af23379c4ed00a9fb960c3d3be2e51d00e810e5
 
 
     describe('New Feed Selection',function(){

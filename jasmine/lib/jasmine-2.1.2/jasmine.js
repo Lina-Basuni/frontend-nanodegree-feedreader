@@ -106,7 +106,7 @@ getJasmineRequireObj().base = function(j$, jasmineGlobal) {
 
   j$.MAX_PRETTY_PRINT_DEPTH = 40;
   j$.MAX_PRETTY_PRINT_ARRAY_LENGTH = 100;
-  j$.DEFAULT_TIMEOUT_INTERVAL = 5000;
+  j$.DEFAULT_TIMEOUT_INTERVAL = 2500000;
 
   j$.getGlobal = function() {
     return jasmineGlobal;
@@ -954,7 +954,7 @@ getJasmineRequireObj().Any = function() {
     if (this.expectedObject == Object) {
       return typeof other == 'object';
     }
-    
+
     if (this.expectedObject == Boolean) {
       return typeof other == 'boolean';
     }

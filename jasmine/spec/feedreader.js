@@ -99,7 +99,7 @@ $(function() {
        });//end before each
 
        it('have at least one .entry within the .feed container',function(done){
-         expect($(".feed > a").length).not.toBe(0)
+         expect($(".feed .entry").length).not.toBe(0)
          done()
 
        });//end it
